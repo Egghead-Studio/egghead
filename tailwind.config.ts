@@ -20,6 +20,7 @@ const config: Config = {
         About: '#93A4FF',
         Referrals: '#93FFC4',
         background: '#1E1E1E',
+        'background-light': '#383838',
         eggshell: '#ECE9DD',
       },
       backgroundColor: {
@@ -27,6 +28,8 @@ const config: Config = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }
 export default config

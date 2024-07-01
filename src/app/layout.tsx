@@ -10,6 +10,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-body'
 export const metadata: Metadata = {
   title: 'Egghead Studios',
   description: 'A creative agency specializing in web design and software development.',
+  icons: '/final-logo-transparent.png',
 }
 
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={'bg-background'}>
-      <body className={clsx('px-4 lg:px-8 bg-background text-eggshell', spaceGrotesk.className, spaceGrotesk.variable, anton.className, anton.variable)}>
+      <body className={clsx('px-4 lg:px-8 bg-background text-eggshell text-lg', spaceGrotesk.className, spaceGrotesk.variable, anton.className, anton.variable)}>
         <Nav />
         {children}
       </body>
